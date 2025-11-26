@@ -1,0 +1,27 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build files
+bin/
+obj/
+
+# ASP.NET Core HTTPS dev certificates
+*.pfx
+*.p12
+
+# Logs
+*.log
+
+# Temporary files
+*.cache
+*.db
+*.opendb
+
+# Rider
+.idea/
+
+# OS generated files
+Thumbs.db
+.DS_Store
