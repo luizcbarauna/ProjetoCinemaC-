@@ -54,7 +54,7 @@ namespace APICinema.Services
             return true;
 
         }
-        public async Task<UsuarioEditarDto> UpdateUsuarioAsync(int id, UsuarioEditarDto obj)
+        public async Task<UsuarioDto> UpdateUsuarioAsync(int id, UsuarioEditarDto obj)
         {
             var usuario = await _context.Usuarios.Include(e=> e.Endereco)
                                 .FirstOrDefaultAsync(x => x.Id == id);
@@ -65,7 +65,7 @@ namespace APICinema.Services
                 _mapper.Map(obj, usuario);
                 usuario.DataAtualizacao = DateTime.Now;
                 await _context.SaveChangesAsync();
-                return _mapper.Map<UsuarioEditarDto>(usuario);
+                return _mapper.Map<UsuarioDto>(usuario);
             }
             catch (Exception ex)
             { throw new Exception(ex.ToString()); }

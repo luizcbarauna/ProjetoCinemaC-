@@ -52,7 +52,7 @@ namespace APICinema.Controllers
             var usuarioAtualizado = await _usuarioService.UpdateUsuarioAsync(id,usuario);
             if (usuarioAtualizado == null) return NotFound("Usuário não encontrado.");
 
-            return Ok();
+            return Ok(usuarioAtualizado);
         }
     }
 }

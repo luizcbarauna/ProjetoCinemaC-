@@ -3,26 +3,6 @@
   "WorkspaceRootPath": "C:\\temp\\projetos\\APICinema\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\temp\\projetos\\APICinema\\APICinema\\Migrations\\20251127202216_CriandoDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:APICinema\\Migrations\\20251127202216_CriandoDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|c:\\temp\\projetos\\apicinema\\apicinema\\model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|solutionrelative:apicinema\\model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|c:\\temp\\projetos\\apicinema\\apicinema\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|solutionrelative:apicinema\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|c:\\temp\\projetos\\apicinema\\apicinema\\dtos\\usuarioeditardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|solutionrelative:apicinema\\dtos\\usuarioeditardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|c:\\temp\\projetos\\apicinema\\apicinema\\mappings\\usuarioprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|solutionrelative:apicinema\\mappings\\usuarioprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|c:\\temp\\projetos\\apicinema\\apicinema\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|solutionrelative:apicinema\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,6 +13,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|c:\\temp\\projetos\\apicinema\\apicinema\\dtos\\enderecodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|solutionrelative:apicinema\\dtos\\enderecodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|c:\\temp\\projetos\\apicinema\\apicinema\\dtos\\usuarioeditardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|solutionrelative:apicinema\\dtos\\usuarioeditardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|c:\\temp\\projetos\\apicinema\\apicinema\\migrations\\20251127202216_criandodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|solutionrelative:apicinema\\migrations\\20251127202216_criandodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|c:\\temp\\projetos\\apicinema\\apicinema\\model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|solutionrelative:apicinema\\model\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|c:\\temp\\projetos\\apicinema\\apicinema\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|solutionrelative:apicinema\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|c:\\temp\\projetos\\apicinema\\apicinema\\mappings\\usuarioprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|solutionrelative:apicinema\\mappings\\usuarioprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AEC817E4-1D5E-4415-B96C-189BC9740BFA}|APICinema\\APICinema.csproj|c:\\temp\\projetos\\apicinema\\apicinema\\dtos\\usuariobuscadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,17 +50,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "20251127202216_CriandoDB.cs",
               "DocumentMoniker": "C:\\temp\\projetos\\APICinema\\APICinema\\Migrations\\20251127202216_CriandoDB.cs",
               "RelativeDocumentMoniker": "APICinema\\Migrations\\20251127202216_CriandoDB.cs",
               "ToolTip": "C:\\temp\\projetos\\APICinema\\APICinema\\Migrations\\20251127202216_CriandoDB.cs",
               "RelativeToolTip": "APICinema\\Migrations\\20251127202216_CriandoDB.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T20:22:16.215Z",
               "EditorCaption": ""
@@ -80,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "EnderecoDto.cs",
               "DocumentMoniker": "C:\\temp\\projetos\\APICinema\\APICinema\\DTOS\\EnderecoDto.cs",
               "RelativeDocumentMoniker": "APICinema\\DTOS\\EnderecoDto.cs",
@@ -93,33 +93,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\temp\\projetos\\APICinema\\APICinema\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "APICinema\\Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\temp\\projetos\\APICinema\\APICinema\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "APICinema\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAjwC8AAABKAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAADwvzMAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-26T17:40:42.037Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "UsuarioService.cs",
               "DocumentMoniker": "C:\\temp\\projetos\\APICinema\\APICinema\\Services\\UsuarioService.cs",
               "RelativeDocumentMoniker": "APICinema\\Services\\UsuarioService.cs",
-              "ToolTip": "C:\\temp\\projetos\\APICinema\\APICinema\\Services\\UsuarioService.cs",
-              "RelativeToolTip": "APICinema\\Services\\UsuarioService.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAUwD0AAAArAAAAAAAAAA==",
+              "ToolTip": "C:\\temp\\projetos\\APICinema\\APICinema\\Services\\UsuarioService.cs*",
+              "RelativeToolTip": "APICinema\\Services\\UsuarioService.cs*",
+              "ViewState": "AgIAACoAAAAAAAAAAAAqwDgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-26T17:33:58.411Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "UsuarioProfile.cs",
               "DocumentMoniker": "C:\\temp\\projetos\\APICinema\\APICinema\\Mappings\\UsuarioProfile.cs",
               "RelativeDocumentMoniker": "APICinema\\Mappings\\UsuarioProfile.cs",
@@ -127,12 +127,11 @@
               "RelativeToolTip": "APICinema\\Mappings\\UsuarioProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T17:33:28.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T17:33:28.222Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\temp\\projetos\\APICinema\\APICinema\\Model\\Usuario.cs",
               "RelativeDocumentMoniker": "APICinema\\Model\\Usuario.cs",
@@ -140,8 +139,7 @@
               "RelativeToolTip": "APICinema\\Model\\Usuario.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwB8AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T17:30:09.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T17:30:09.82Z"
             },
             {
               "$type": "Document",
@@ -157,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "UsuarioDto.cs",
               "DocumentMoniker": "C:\\temp\\projetos\\APICinema\\APICinema\\DTOS\\UsuarioDto.cs",
               "RelativeDocumentMoniker": "APICinema\\DTOS\\UsuarioDto.cs",
@@ -165,8 +163,7 @@
               "RelativeToolTip": "APICinema\\DTOS\\UsuarioDto.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T17:29:43.594Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T17:29:43.594Z"
             },
             {
               "$type": "Document",
