@@ -1,12 +1,12 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
+
 
 #nullable disable
 
 namespace APICinema.Migrations
 {
     /// <inheritdoc />
-    public partial class primeiramigration : Migration
+    public partial class CriandoDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -22,7 +22,7 @@ namespace APICinema.Migrations
                     NomeCompleto = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     Senha = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     Apelido = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
-                    DataNascimento = table.Column<string>(type: "nvarchar(12)", maxLength: 12, nullable: false),
+                    DataNascimento = table.Column<DateTime>(type: "datetime2", maxLength: 12, nullable: false),
                     Celular = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Genero = table.Column<int>(type: "int", nullable: false),
                     DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: false),

@@ -34,6 +34,42 @@
             "description": "OK"
           }
         }
+      },
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UsuarioBuscaDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UsuarioBuscaDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UsuarioBuscaDto"
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/Usuario/{id}": {
@@ -52,6 +88,67 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioEditarDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioEditarDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioEditarDto"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -139,6 +236,28 @@
         },
         "additionalProperties": false
       },
+      "UsuarioBuscaDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cpf": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "nomeCompleto": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "UsuarioCreateDto": {
         "type": "object",
         "properties": {
@@ -181,6 +300,54 @@
           "dataAtualizacao": {
             "type": "string",
             "format": "date-time"
+          },
+          "endereco": {
+            "$ref": "#/components/schemas/EnderecoDto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioEditarDto": {
+        "type": "object",
+        "properties": {
+          "cpf": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "nomeCompleto": {
+            "type": "string",
+            "nullable": true
+          },
+          "apelido": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataNascimento": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "celular": {
+            "type": "string",
+            "nullable": true
+          },
+          "genero": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataCadastro": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "dataAtualizacao": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
           },
           "endereco": {
             "$ref": "#/components/schemas/EnderecoDto"

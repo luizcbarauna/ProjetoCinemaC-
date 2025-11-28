@@ -108,10 +108,9 @@ namespace APICinema.Migrations
                     b.Property<DateTime>("DataCadastro")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("DataNascimento")
-                        .IsRequired()
+                    b.Property<DateTime>("DataNascimento")
                         .HasMaxLength(12)
-                        .HasColumnType("nvarchar(12)");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .IsRequired()

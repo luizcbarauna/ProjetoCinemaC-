@@ -32,6 +32,27 @@ namespace APICinema.Controllers
             if(usuario == null) return NotFound();
             return Ok(usuario);
         }
+        [HttpGet]
+        public async Task<ActionResult<List<UsuarioBuscaDto>>> BuscarTodos()
+        {
+            return await _usuarioService.BuscarTodosAsync();
+        }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeletarUsuario(int id)
+        {
+            bool deletado = await _usuarioService.DeletarUsuarioAsync(id);
+            if(!deletado) return NotFound();
+            return NoContent();
+        }
+        [HttpPatch("{id}")]
+        public async Task<IActionResult>EditarUsuario( int id, [FromBody] UsuarioEditarDto usuario)
+        {
+            if (usuario == null) return BadRequest("Usuário inválido.");
 
+            var usuarioAtualizado = await _usuarioService.UpdateUsuarioAsync(id,usuario);
+            if (usuarioAtualizado == null) return NotFound("Usuário não encontrado.");
+
+            return Ok();
+        }
     }
 }

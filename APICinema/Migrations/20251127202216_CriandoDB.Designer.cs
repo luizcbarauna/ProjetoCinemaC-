@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace APICinema.Migrations
 {
     [DbContext(typeof(CinemaContext))]
-    [Migration("20251126124211_primeiramigration")]
-    partial class primeiramigration
+    [Migration("20251127202216_CriandoDB")]
+    partial class CriandoDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -111,10 +111,9 @@ namespace APICinema.Migrations
                     b.Property<DateTime>("DataCadastro")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("DataNascimento")
-                        .IsRequired()
+                    b.Property<DateTime>("DataNascimento")
                         .HasMaxLength(12)
-                        .HasColumnType("nvarchar(12)");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .IsRequired()

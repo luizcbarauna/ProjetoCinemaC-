@@ -17,6 +17,26 @@
   },
   {
     "ContainingType": "APICinema.Controllers.UsuarioController",
+    "Method": "BuscarTodos",
+    "RelativePath": "Usuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[APICinema.DTOS.UsuarioBuscaDto, APICinema, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APICinema.Controllers.UsuarioController",
     "Method": "BuscarUsuario",
     "RelativePath": "Usuario/{id}",
     "HttpMethod": "GET",
@@ -26,6 +46,43 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APICinema.Controllers.UsuarioController",
+    "Method": "DeletarUsuario",
+    "RelativePath": "Usuario/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APICinema.Controllers.UsuarioController",
+    "Method": "EditarUsuario",
+    "RelativePath": "Usuario/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "usuario",
+        "Type": "APICinema.DTOS.UsuarioEditarDto",
         "IsRequired": true
       }
     ],

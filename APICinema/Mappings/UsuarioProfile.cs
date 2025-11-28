@@ -14,6 +14,19 @@ namespace APICinema.Mappings
                 .ForMember(x => x.Genero, opt => opt.MapFrom(src => src.Genero.ToUpper() == "M" ? Genero.Masculino : Genero.Feminino));
             CreateMap<EnderecoDto, Endereco>();
             CreateMap<Endereco, EnderecoDto>();
+            CreateMap<Usuario, UsuarioEditarDto>();
+            CreateMap<UsuarioEditarDto, Usuario>()
+    .ForMember(dest => dest.Genero, opt => opt.MapFrom(src =>
+        src.Genero == "M" ? Genero.Masculino :
+        src.Genero == "F" ? Genero.Feminino :
+        (Genero?)null
+    ))
+    .ForAllMembers(opt =>
+        opt.Condition((src, dest, srcMember) =>
+            srcMember != null &&
+            !(srcMember is string s && string.IsNullOrWhiteSpace(s))
+        )
+    );
         }
     }
 }

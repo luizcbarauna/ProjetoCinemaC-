@@ -2,6 +2,7 @@
 using APICinema.DTOS;
 using APICinema.Model;
 using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace APICinema.Services
@@ -18,7 +19,7 @@ namespace APICinema.Services
         }
         public async Task<UsuarioDto> FindByIdAsync(int id)
         {
-            var usuario = await _context.Usuarios.FindAsync(id);
+            var usuario = await _context.Usuarios.Include(x=>x.Endereco).FirstOrDefaultAsync(x=>x.Id == id);
             return _mapper.Map<UsuarioDto?>(usuario);
         }
         public async Task<UsuarioDto> CriarUsuarioAsync(UsuarioCreateDto usuarioDto)
@@ -32,6 +33,44 @@ namespace APICinema.Services
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
             return _mapper.Map<UsuarioDto>(usuario);
+        }
+        public async Task<List<UsuarioBuscaDto>> BuscarTodosAsync()
+        {
+            return await _context.Usuarios.Select(x=> new UsuarioBuscaDto
+            {
+               Id = x.Id,
+               Cpf = x.Cpf,
+               Email = x.Email,
+               NomeCompleto = x.NomeCompleto
+            }).ToListAsync();
+        }
+      public async Task<bool> DeletarUsuarioAsync(int  id)
+        {
+            var usuario = await _context.Usuarios.Include(e=> e.Endereco).FirstOrDefaultAsync(x=> x.Id ==id);
+            if(usuario == null)return false;
+
+             _context.Usuarios.Remove(usuario);
+            await _context.SaveChangesAsync();
+            return true;
+
+        }
+        public async Task<UsuarioEditarDto> UpdateUsuarioAsync(int id, UsuarioEditarDto obj)
+        {
+            var usuario = await _context.Usuarios.Include(e=> e.Endereco)
+                                .FirstOrDefaultAsync(x => x.Id == id);
+
+            if (usuario == null)throw new Exception("Usuário não encontrado");
+            try
+            {
+                _mapper.Map(obj, usuario);
+                usuario.DataAtualizacao = DateTime.Now;
+                await _context.SaveChangesAsync();
+                return _mapper.Map<UsuarioEditarDto>(usuario);
+            }
+            catch (Exception ex)
+            { throw new Exception(ex.ToString()); }
+
+
         }
     }
 }

@@ -29,7 +29,7 @@ namespace APICinema.Model
         public string Apelido { get; set; }
         [Required]
         [StringLength(12)]
-        public string DataNascimento { get; set; }
+        public DateTime DataNascimento { get; set; }
         public string Celular { get; set; }
         public Genero Genero { get; set; }
         public DateTime DataCadastro { get; set; }
