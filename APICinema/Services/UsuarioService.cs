@@ -1,6 +1,7 @@
 ﻿using APICinema.Data;
 using APICinema.DTOS;
 using APICinema.Model;
+using APICinema.Model.Enums;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -72,5 +73,6 @@ namespace APICinema.Services
 
 
         }
+       
     }
 }

@@ -9,9 +9,9 @@ namespace APICinema.Mappings
     {
         public UsuarioProfile() 
         {
-            CreateMap<Usuario, UsuarioDto>().ForMember(x=> x.Genero, opt => opt.MapFrom(src=> src.Genero == Genero.Masculino ? "M": "F" ));
+            CreateMap<Usuario, UsuarioDto>().ForMember(x => x.Genero, opt => opt.MapFrom(src => MapGeneroSaida(src.Genero)));
             CreateMap<UsuarioCreateDto, Usuario>()
-                .ForMember(x => x.Genero, opt => opt.MapFrom(src => src.Genero.ToUpper() == "M" ? Genero.Masculino : Genero.Feminino));
+                .ForMember(x => x.Genero, opt => opt.MapFrom(src => MapGeneroEntrada(src.Genero)));
             CreateMap<EnderecoDto, Endereco>();
             CreateMap<Endereco, EnderecoDto>();
             CreateMap<Usuario, UsuarioEditarDto>();
@@ -19,7 +19,9 @@ namespace APICinema.Mappings
     .ForMember(dest => dest.Genero, opt => opt.MapFrom(src =>
         src.Genero == "M" ? Genero.Masculino :
         src.Genero == "F" ? Genero.Feminino :
-        (Genero?)null
+        src.Genero == "B" ? Genero.NaoBinario :
+        src.Genero == "N" ? Genero.PrefiroNaoInformar : 
+         (Genero?)null
     ))
     .ForAllMembers(opt =>
         opt.Condition((src, dest, srcMember) =>
@@ -27,6 +29,32 @@ namespace APICinema.Mappings
             !(srcMember is string s && string.IsNullOrWhiteSpace(s))
         )
     );
+        }
+        public static Genero MapGeneroEntrada(string genero)
+        {
+            if (string.IsNullOrWhiteSpace(genero))
+                return Genero.PrefiroNaoInformar;
+
+            return genero.ToUpper() switch
+            {
+                "M" => Genero.Masculino,
+                "F" => Genero.Feminino,
+                "B" => Genero.NaoBinario,
+                "N" => Genero.PrefiroNaoInformar,
+                _ => Genero.PrefiroNaoInformar
+            };
+        }
+
+        public static string MapGeneroSaida(Genero genero)
+        {
+            return genero switch
+            {
+                Genero.Masculino => "M",
+                Genero.Feminino => "F",
+                Genero.NaoBinario => "B",
+                Genero.PrefiroNaoInformar => "N",
+                _ => "N"
+            };
         }
     }
 }

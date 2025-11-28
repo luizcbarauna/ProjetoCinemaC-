@@ -1,4 +1,5 @@
 ﻿using APICinema.Model;
+using APICinema.Model.Enums;
 
 namespace APICinema.DTOS
 {
